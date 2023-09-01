@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Projeto Carteira Digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-mocha -r test-setup.ts './test/**/**.test.ts' --paths",
+    "build": "sls package",
+    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' 'test/**/*.ts' --fix",
+    "ts:check": "tsc --noEmit"
+  },
+  "author": "Leandro Mello",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/chai": "^4.3.5",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.7",
+    "@types/sinon-chai": "^3.2.9",
+    "@types/uuid": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "chai": "^4.3.8",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-loader": "^4.0.2",
+    "sinon": "^15.2.0",
+    "sinon-chai": "^3.7.0",
+    "ts-mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.21",
+    "uuidv4": "^6.2.13"
+  }
+}
